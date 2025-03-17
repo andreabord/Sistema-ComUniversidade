@@ -1,0 +1,27 @@
+textarea {
+    height: 10rem;
+    resize: none;
+}
+
+.input-text {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 1px solid var(--color-medium-grey);
+    border-radius: 8px;
+    padding: 10px 15px;
+    color: #333;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.input-text:hover {
+    border-color: #aaa;
+}
+
+.input-text:focus {
+    border-color: #5c9cff;
+    box-shadow: 0 0 3px rgba(92, 156, 255, 0.5);
+}

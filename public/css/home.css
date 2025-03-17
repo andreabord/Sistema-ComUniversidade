@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-white);
+}
+
+:root {
+    --color-light-grey: #f8fafb;
+    --color-medium-grey: #f1f2f3;
+    --color-dark-grey: #d1d4db;
+    --color-blue: #3e6ff4;
+    --color-dark-blue: #001D3D;
+    --color-black: #000000;
+    --color-white: #ffffff;
+}
+
+.button-a-primary {
+    color: var(--color-white);
+    background-color: var(--color-blue);
+    border-radius: 0.5rem;
+    text-decoration: none;
+    margin: 0.5rem;
+    padding: 0.75rem 1.125rem;
+    max-width: fit-content;
+    max-height: fit-content;
+}
+
+.button-a-primary:hover {
+    background-color: #255cf5;
+    text-decoration: none;
+}
+
+h4 {
+    margin: 0.375rem;
+}
+
+/* HEADER */
+
+header {
+    width: 100vw;
+}
+
+.navbar {
+    background-color: var(--color-medium-grey);
+    height: 4rem;
+    margin: 1.5rem;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.75rem;
+}
+
+.navbar-content {
+    min-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-left {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    max-width: fit-content;
+    gap: 0.75rem;
+}
+
+.nav-left img {
+    width: 1.5rem;
+    display: inline-block;
+}
+
+.nav-links, .nav-home-link {
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--color-black);
+}
+
+.nav-links:hover {
+    font-weight: 500;
+}
+
+.nav-right {
+    max-width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+/* MAIN */
+section {
+    padding: 5rem 10%;
+}
+
+/* PRIMEIRA SECAO - HERO */
+
+.home {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.home-right {
+    flex: 1;
+}
+
+.home-left {
+    flex: 2;
+}
+
+.home-right img {
+    width: 100%;
+    object-fit: fill;
+    border-radius: 0.75rem;
+}
+
+/* SEGUNDA SECAO - PERFIS*/
+
+.profiles {
+    background-color: var(--color-medium-grey);
+}
+
+.cards-profile-container {
+    padding: 1.5rem 5% 0 5%;
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.card-profile {
+    background-color: var(--color-white);
+    border-radius: 0.75rem;
+    text-align: center;
+    padding: 1.5rem;
+    flex: 1;
+    min-height: 16rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* TERCEIRA SECAO - BENEFÍCIOS */
+
+.benefits-lists-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 5% 0 5%;
+    gap: 1.5rem;
+}
+
+.benefits-list {
+    flex: 1;
+}
+
+/* FOOTER */
+
+.footer-content {
+    color: var(--color-white);
+    background-color: var(--color-dark-blue);
+    border-radius: 0.75rem;
+    text-align: center;
+    min-height: 15rem;
+    margin: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-content h5,h6{
+    font-weight: normal;
+    margin: 0;
+}
+
+.name-designer {
+    margin: 0.75rem;
+}
+
+.name-designer a {
+    color: var(--color-white);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+
+/* Dispositivos pequenos (smartphones, retrato) */
+@media (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+
+    .navbar {
+        height: 5rem;
+    }
+
+    .nav-links  {
+        display: none;
+    }
+
+    
+    .button-a-primary {
+        padding: 1rem 1.5rem;;
+    }
+
+    .home {
+        flex-direction: column;
+    }
+
+    .cards-profile-container {
+        flex-direction: column;
+    }
+
+    .benefits-lists-container {
+        flex-direction: column;
+    }
+}
+
+/* Dispositivos grandes (laptops pequenos) */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .home {
+        flex-direction: column;
+    }
+
+    .cards-profile-container {
+        flex-direction: column;
+    }
+
+    .benefits-lists-container {
+        flex-direction: column;
+    }
+}
+
+/* Telas muito grandes (monitores) */
+@media (min-width: 1400px) {
+    html {
+        font-size: 18px;
+    }
+}

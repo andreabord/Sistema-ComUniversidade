@@ -1,0 +1,17 @@
+.modal-small {
+    text-align: center;
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+@media (max-width: 768px) {
+    .modal-content {
+        width: 90vw;
+    }
+}

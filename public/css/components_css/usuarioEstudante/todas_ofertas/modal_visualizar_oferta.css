@@ -1,0 +1,39 @@
+.offer-info {
+    width: 100%;
+}
+
+.info-content {
+    display: flex;
+    gap: 1rem;
+}
+
+.offer-description {
+    margin: 1rem 0;
+}
+
+.info-content div {
+    flex: 1;
+}
+
+.p-info {
+    color: gray;
+    font-size: 14px;
+}
+
+.offer-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: end;
+    margin: 1rem 0;
+}
+
+.offer-buttons img {
+    width: 1rem;
+    height: 1rem;
+}
+
+@media (max-width: 768px) {
+    .info-content {
+        flex-direction: column;
+    }
+}

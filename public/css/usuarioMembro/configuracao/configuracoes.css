@@ -1,0 +1,20 @@
+main {
+    padding: var(--spacing-section);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.button-a-primary {
+    max-width: none !important;
+    width: 15rem;
+    text-align: center;
+}

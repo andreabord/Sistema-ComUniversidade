@@ -1,0 +1,62 @@
+textarea {
+    height: 10rem;
+    resize: none;
+}
+
+.custom-select, .input-text {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 1px solid var(--color-medium-grey);
+    border-radius: 8px;
+    padding: 10px 15px;
+    color: #333;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.custom-select::after {
+    content: '▼';
+    position: absolute;
+    right: 10px;
+    pointer-events: none;
+    color: #333;
+}
+
+.custom-select:hover, .input-text:hover {
+    border-color: #aaa;
+}
+
+.custom-select:focus, .input-text:focus {
+    border-color: #5c9cff;
+    box-shadow: 0 0 3px rgba(92, 156, 255, 0.5);
+}
+
+.custom-select option {
+    padding: 10px;
+}
+
+.register-section {
+    padding: var(--spacing-section);
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+label {
+    margin-top: 0.75rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.85rem;
+}
+
+.buttons-container {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}

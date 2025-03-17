@@ -1,0 +1,29 @@
+#help {
+    padding: 90px 10%;
+}
+
+section {
+    margin: 32px 0;
+}
+
+.status-respondido {
+    text-align: center;
+    background-color: #C2EDFF;
+    color: #0073FF;
+    border: solid 1px #0073FF;
+    border-radius: 48px;
+    padding: 6px 12px;
+    margin: auto 0;
+    font-size: 14px;
+}
+
+.status-realizado {
+    text-align: center;
+    background-color: #FFE5C7;
+    color: #FFA201;
+    border: solid 1px #FFA201;
+    border-radius: 48px;
+    padding: 6px 12px;
+    margin: auto 0;
+    font-size: 14px;
+}

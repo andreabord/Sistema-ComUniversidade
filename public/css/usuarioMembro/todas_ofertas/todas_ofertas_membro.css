@@ -1,0 +1,255 @@
+.all-offers {
+    padding: var(--spacing-section);
+}
+
+img {
+    height: 1.25rem;
+    width: 1.25rem;
+}
+
+.no-data {
+    width: 100%;
+    text-align: center;
+}
+
+
+.input-box {
+    display: flex;
+    gap: 1rem;
+}
+
+.filters-search {
+    display: flex;
+    gap: 1rem;
+    position: relative;
+    width: 100%;
+}
+
+.text-search-container {
+    width: 100%;
+}
+
+.filters {
+    position: absolute;
+    display: none;
+    background-color: var(--color-white);
+    border-radius: 0.75rem;
+    border: solid 1px var(--color-medium-grey);
+    padding: 1rem;
+    z-index: 995;
+    right: 0;
+    top: 110%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.filters form, .filter-type {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.filters select {
+    width: 18rem;
+}
+
+.buttons-filter {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.custom-select, .input-text {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 1px solid var(--color-medium-grey);
+    border-radius: 8px;
+    padding: 10px 15px;
+    color: #333;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.custom-select::after {
+    content: '▼';
+    position: absolute;
+    right: 10px;
+    pointer-events: none;
+    color: #333;
+}
+
+.custom-select:hover, .input-text:hover {
+    border-color: #aaa;
+}
+
+.custom-select:focus, .input-text:focus {
+    border-color: #5c9cff;
+    box-shadow: 0 0 3px rgba(92, 156, 255, 0.5);
+}
+
+.custom-select option {
+    padding: 10px;
+}
+
+.icons {
+    height: 1.75rem;
+    width: 1.75rem;
+    cursor: pointer;
+}
+
+.btn {
+    padding: 0.65rem 0.75rem !important;
+}
+
+.cards-container {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.status-tag {
+    display: flex;
+    justify-content: end;
+}
+
+.status-visualizado {
+    background-color: #B5EBCC;
+    color: #00AA53;
+    border: solid 1px #00AA53;
+    border-radius: 48px;
+    padding: 6px 12px;  
+    margin-bottom: 0.75rem;
+    font-size: 14px;
+}
+
+.status-nao-visualizado {
+    background-color: #FFE3E0;
+    color: #FF3E2C;
+    border: solid 1px #FF3E2C;
+    border-radius: 48px;
+    padding: 6px 12px;
+    margin-bottom: 0.75rem;
+    font-size: 14px;
+}
+
+.offer-card {
+    flex: 0 1 calc(33% - 0.5rem);
+    background-color: var(--color-light-grey);
+    border: solid 1px var(--color-medium-grey);
+    border-radius: 12px;
+    padding: 1rem;
+}
+
+.date {
+    color: darkgray;
+    margin: 0;
+    font-size: 14px;
+}
+
+.offer-info p {
+    font-size: 14px;
+    margin: 0;
+}
+
+.action-buttons {
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: end;
+    gap: 0.5rem;
+}
+
+.action-button {
+    color: var(--color-black);
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+@media (max-width: 520px) {
+    .offer-card {
+        flex: 0 0 calc(100%);
+    }
+    
+    .pagination-button {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .demand-header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+@media (min-width: 520px) and (max-width: 1000px) {
+    .offer-card {
+        flex: 0 0 calc(50% - 1rem);
+    }
+
+    .pagination-button {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .demand-header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+.pagination-content {
+    margin-top: 1.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.pagination ul {
+    list-style-type: none;
+}
+
+.page-link {
+    color: #333;
+    text-decoration: none;
+}
+
+.pagination li {
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 40px;
+    cursor: pointer;
+}
+
+.pagination li.active {
+    background-color: var(--color-blue);
+    color: white;
+    border: none;
+    cursor: default;
+}
+
+.pagination li.active span {
+    color: white;
+}
+
+.pagination li.disabled {
+    border-color: #eee;
+    cursor: default;
+}
+
+.pagination li.disabled span {
+    color: #ccc;
+    pointer-events: none;
+}

@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-white);
+}
+
+:root {
+    --color-light-grey: #f8fafb;
+    --color-medium-grey: #f1f2f3;
+    --color-dark-grey: #d1d4db;
+    --color-blue: #3e6ff4;
+    --color-dark-blue: #001D3D;
+    --color-black: #000000;
+    --color-white: #ffffff;
+    --color-red-error: #ffd7d7;
+    --spacing-section: 5rem 10%;
+}
+
+.button-a-primary {
+    color: var(--color-white);
+    background-color: var(--color-blue);
+    border-radius: 0.5rem;
+    text-decoration: none;
+    margin: 0.5rem;
+    padding: 0.75rem 1.125rem;
+    max-width: fit-content;
+    max-height: fit-content;
+}
+
+.button-a-primary:hover {
+    background-color: #255cf5;
+    text-decoration: none;
+}
+
+.button-a-secondary {
+    color: var(--color-black);
+    background-color: var(--color-white);
+    border-radius: 0.5rem;
+    border: solid 1px var(--color-medium-grey);
+    text-decoration: none;
+    margin: 0.5rem;
+    padding: 0.75rem 1.125rem;
+    max-width: fit-content;
+    max-height: fit-content;
+}
+
+.button-a-secondary:hover {
+    background-color: var(--color-medium-grey);
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    padding: 6rem;
+    height: 100vh;
+    background-color: var(--color-light-grey);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logout-container {
+    background-color: var(--color-white);
+    border-radius: 0.75rem;
+    border: 1px solid var(--color-medium-grey);
+    width: 25rem;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logout-buttons {
+    display: flex;
+    padding-top: 1rem;
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+
+    .button-a-primary, .button-a-secondary {
+        padding: 1rem 1.5rem;;
+    }
+
+    .logout-container {
+        width: 90vw;
+    }
+}
+
+@media (min-width: 1400px) {
+    html {
+        font-size: 18px;
+    }
+}

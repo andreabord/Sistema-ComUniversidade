@@ -1,0 +1,131 @@
+.pagination-button {
+    display: flex;
+    justify-content: end;
+}
+
+.offers-section {
+    padding: var(--spacing-section);
+}
+
+.no-data {
+    width: 100%;
+    text-align: center;
+}
+
+.cards-container {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.status-tag {
+    display: flex;
+    justify-content: end;
+}
+
+.offer-card {
+    flex: 0 0 calc(33% - 0.5rem);
+    background-color: var(--color-light-grey);
+    border: solid 1px var(--color-medium-grey);
+    border-radius: 12px;
+    padding: 1rem;
+}
+
+.date {
+    color: darkgray;
+    margin: 0;
+    font-size: 14px;
+}
+
+.division-hr {
+    height: 1px;
+    background-color: var(--color-medium-grey);
+    border: none;
+    margin: 0.75rem 0;
+}
+
+.offer-info p {
+    font-size: 14px;
+    margin: 0;
+}
+
+.action-buttons {
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: end;
+    gap: 0.5rem;
+}
+
+.action-buttons a {
+    color: var(--color-black);
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+@media (max-width: 560px) {
+    .offer-card {
+        flex: 0 0 calc(100%);
+    }
+}
+
+@media (min-width: 560px) and (max-width: 1015px) {
+    .offer-card {
+        flex: 0 0 calc(50% - 0.5rem);
+    }
+}
+
+.pagination-content {
+    margin-top: 1.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.pagination ul {
+    list-style-type: none;
+}
+
+.page-link {
+    color: #333;
+    text-decoration: none;
+}
+
+.pagination li {
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 40px;
+    cursor: pointer;
+}
+
+.pagination li.active {
+    background-color: var(--color-blue);
+    color: white;
+    border: none;
+    cursor: default;
+}
+
+.pagination li.active span {
+    color: white;
+}
+
+.pagination li.disabled {
+    border-color: #eee;
+    cursor: default;
+}
+
+.pagination li.disabled span {
+    color: #ccc;
+    pointer-events: none;
+}

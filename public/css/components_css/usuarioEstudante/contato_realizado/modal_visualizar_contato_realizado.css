@@ -1,0 +1,15 @@
+.title-date-offer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.p-info {
+    color: gray;
+    font-size: 14px;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: end;
+    gap: 1rem;
+}
