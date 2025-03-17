@@ -45,8 +45,8 @@ Este sistema foi desenvolvido utilizando o framework Laravel, um dos mais popula
 2. Clone o repositório
 
 ```sh
-git clone https://seu-repositorio.git
-cd nome-do-projeto
+git clone https://github.com/andreabord/Sistema-ComUniversidade.git
+cd Sistema-ComUniversidade
 ```
 
 3. Contrua e inicialize os containers
