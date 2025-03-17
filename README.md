@@ -36,10 +36,12 @@ Este sistema foi desenvolvido utilizando o framework Laravel, um dos mais popula
 > - `GOOGLE_REDIRECT_URI`
 > - `MAIL_USERNAME`
 > - `MAIL_FROM_ADDRESS`
+> 
 > Depois acesse http://localhost:8000/callback para autorizar o uso.
+> 
 > Após isso, o envio deve estar funcionando normalmente.
 >
-> Não configurar o envio de e-mail não afeta o funcionamento do sistema, só não vai ser possível enviar e-mails.
+> *Não configurar o envio de e-mail não afeta o funcionamento do sistema, só não vai ser possível enviar e-mails.*
 
 1. Certfique-se de ter instalado o Docker e o Docker Compose.
 2. Clone o repositório
